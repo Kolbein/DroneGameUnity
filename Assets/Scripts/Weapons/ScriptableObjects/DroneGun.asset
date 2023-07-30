@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d24175e4625f84dbb1c344d375aec9, type: 3}
+  m_Name: DroneGun
+  m_EditorClassIdentifier: 
+  Name: Drone Gun 3000
+  Damage: 1000
+  MaxDistance: 1000
+  Recoil: 200
+  CurrentAmmo: 7
+  MagSize: 10
+  FireRate: 120
+  ReloadTime: 2
+  IsReloading: 0

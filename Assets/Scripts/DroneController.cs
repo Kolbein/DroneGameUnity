@@ -25,7 +25,6 @@ public class DroneController : BaseRigidbody
         _motors = GetComponentsInChildren<IMotor>().ToList();
     }
 
-
     protected override void HandlePhysics()
     {
         HandleEngines();

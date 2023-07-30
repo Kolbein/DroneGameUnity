@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,9 @@ public class DroneInputs : MonoBehaviour
     public Vector2 CyclicRight { get; private set; }
     public float Throttle { get; private set; }
     public bool IsHoverMode { get; private set; } = true;
+
+    public Action ShootAction;
+    public Action ReloadAction;
 
     private void OnCyclicLeft(InputValue value)
     {
@@ -23,5 +27,15 @@ public class DroneInputs : MonoBehaviour
     private void OnHover()
     {
         IsHoverMode = !IsHoverMode;
+    }
+
+    private void OnShoot()
+    {
+        ShootAction?.Invoke();
+    }
+
+    private void OnReload()
+    {
+        ReloadAction?.Invoke();
     }
 }

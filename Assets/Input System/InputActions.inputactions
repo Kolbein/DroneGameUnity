@@ -6,15 +6,6 @@
             "id": "3510c81a-d49c-4225-bd79-397f286a2533",
             "actions": [
                 {
-                    "name": "Fly",
-                    "type": "Value",
-                    "id": "4b334c2c-9a26-4a06-bec9-c3af733a0b2c",
-                    "expectedControlType": "Stick",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
                     "name": "CyclicLeft",
                     "type": "PassThrough",
                     "id": "5dc2424f-191b-4e71-90b8-c3a079656ee4",
@@ -40,31 +31,27 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "624f126a-3369-4406-b64d-34331a82b38a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "ec8e0800-c815-4590-afb4-ab73c37428c8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "51c69412-d0e0-4ab5-9436-a284736ff15e",
-                    "path": "<XInputController>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Fly",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1d1cd4ce-88b4-49a6-b41c-a045c1a3d33f",
-                    "path": "<XInputController>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Fly",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "051c97e5-64a8-4d72-94a6-75b529f45fd6",
@@ -95,6 +82,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Hover",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "51934578-92d8-4269-ada5-a70ab60581b1",
+                    "path": "<XInputController>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "00b02df1-4a8c-4a43-8419-27613614983d",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -17,19 +17,19 @@ public class DroneMotor : MonoBehaviour, IMotor
     {
     }
 
-    public void UpdateMotor(Rigidbody rb, DroneInputs input)
+    public void UpdateMotor(Rigidbody rigidbody, DroneInputs input)
     {
         float motorForce = input.Throttle * _maxPower / 4;
 
         if (input.IsHoverMode)
         {
             // Opposite drone down force, per motor
-            motorForce += rb.mass * Physics.gravity.magnitude / 4; 
+            motorForce += rigidbody.mass * Physics.gravity.magnitude / 4; 
         }
 
         _finalMotorForce = Mathf.Lerp(_finalMotorForce, motorForce, Time.deltaTime * _lerpSpeed);
 
-        rb.AddForce(transform.up * _finalMotorForce, ForceMode.Force);
+        rigidbody.AddForce(transform.up * _finalMotorForce, ForceMode.Force);
 
         HandlePropeller(motorForce);
     }

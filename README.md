@@ -1,18 +1,25 @@
 # Drone Game In Unity 🔫🚁
 Unity project for flying a quad drone with Xbox controller.
-Left stick for throttle and yaw, and right stick for pitch and roll.
-X for reload, Y for Hoved Mode, and RT for shooting.
+
+## Input Map
+| Input | Action |
+| - | - |
+| Left Stick | Throttle / Yaw |
+| Right Stick | Pitch / Roll |
+| X | Reload |
+| Y | Hoved Mode |
+| RT | Shoot | 
 
 ## Roadmap
 - [X] Physics based drone flying
+- [X] Xbox Controller Input System
 - [X] Drone
     - [X] Simple Body
-    - [X] Xbox Controller Input System
     - [X] Different Flying Modes
         - [X] Hover Mode
         - [X] Flying With Pitch And Roll Constraints
         - [ ] Flying Without Pitch And Roll Constraints
-- [ ] Weapon
+- [X] Weapon
     - [X] Prefab
     - [X] Shooting Script
     - [X] Recoil Force
@@ -30,7 +37,7 @@ X for reload, Y for Hoved Mode, and RT for shooting.
     - [ ] Switching Weapons Animation
 - [ ] Enemies
 - [ ] Leveling System? 
-- [ ] UI
+- [X] UI
     - [X] Display Ammo
     - [X] Display Reloading
     - [X] Crosshair
@@ -44,7 +51,7 @@ X for reload, Y for Hoved Mode, and RT for shooting.
             - [ ] Field Of View
         - [ ] Exit Game
         - [ ] In-game Pause Menu
-- [ ] Audio
+- [X] Audio
     - [ ] Background Music
     - [X] Shooting Audio
         - [X] Drone Gun
